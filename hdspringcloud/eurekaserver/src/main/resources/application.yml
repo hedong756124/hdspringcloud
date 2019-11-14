@@ -1,0 +1,17 @@
+
+## 服务注册中心配置文件
+
+server:
+  port: 8761
+
+eureka:
+  instance:
+    hostname: localhost
+  client:
+    ## 下面2个注解为false 表明当前服务注册中心
+    registerWithEureka: false
+    fetchRegistry: false
+    serviceUrl:
+      defaultZone: http://${eureka.instance.hostname}:${server.port}/eureka/
+
+
