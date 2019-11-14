@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="Encoding">
+    <file url="file://$PROJECT_DIR$" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/common-framework" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/common-framework/common-framework-api" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/common-framework/common-framework-dao" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/common-framework/common-framework-service" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/commonservice" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/commonservice/commonservice-config" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/commonservice/commonservice-eureka" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/commonservice/commonservice-mq-consumer1" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/commonservice/commonservice-mq-consumer2" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/commonservice/commonservice-mq-consumer3" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/commonservice/commonservice-mq-producer" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/commonservice/commonservice-system" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/component" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/component/component-aop-log" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/component/component-base" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/component/component-utils" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/honghu-auction" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/honghu-auction/honghu-auction-api" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/honghu-auction/honghu-auction-client" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/honghu-auction/honghu-auction-dao" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/honghu-auction/honghu-auction-label" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/honghu-auction/honghu-auction-service" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/honghu-collect" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/honghu-collect/honghu-collect-api" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/honghu-collect/honghu-collect-client" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/honghu-collect/honghu-collect-dao" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/honghu-collect/honghu-collect-label" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/honghu-collect/honghu-collect-service" charset="UTF-8" />
+  </component>
+</project>

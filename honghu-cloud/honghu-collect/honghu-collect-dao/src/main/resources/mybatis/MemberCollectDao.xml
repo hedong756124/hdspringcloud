@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.honghu.cloud.dao.MemberCollectDao">
+    
+	<sql id="memberCollectColumns">
+		a.id AS "id",
+		a.auction_id AS "auctionId",
+		a.mid AS "mid",
+		a.create_date AS "createDate",
+		a.classify_collect_id AS "classifyCollectId",
+		a.update_date AS "updateDate",
+		a.del_flag AS "delFlag"
+	</sql>
+	
+	<sql id="auctionColumns">
+		au.id AS "auction.id",
+		au.theme AS "auction.theme",
+		au.activity_start_date AS "auction.activityStartDate",
+		au.activity_end_date AS "auction.activityEndDate",
+		au.url1 AS "auction.url1"
+	</sql>
+	
+	<sql id="memberCollectJoins">
+		inner join t_auction au on au.id = a.auction_id
+	</sql>
+	
+	<sql id="memberCollectCondition">
+			a.del_flag = 0
+			<if test="mid != null">
+				AND	a.mid = #{mid}
+			</if>
+			<if test="auctionId != null">
+				AND	a.auction_id = #{auctionId}
+			</if>
+	</sql>
+	
+	<select id="getList" resultType="com.honghu.cloud.bean.MemberCollect">
+		SELECT 
+			<include refid="memberCollectColumns"/>,
+			<include refid="auctionColumns"/>
+		FROM t_member_collect a
+		<include refid="memberCollectJoins"/>
+		<where>
+			<include refid="memberCollectCondition"/>
+		</where>
+		LIMIT #{startIndex}, #{size}
+	</select>
+</mapper>

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="common-framework-api" />
+        <module name="component-aop-log" />
+        <module name="honghu-collect-dao" />
+        <module name="honghu-collect-label" />
+        <module name="component-base" />
+        <module name="honghu-auction-label" />
+        <module name="honghu-auction-dao" />
+        <module name="honghu-collect-api" />
+        <module name="commonservice-mq-producer" />
+        <module name="common-framework-service" />
+        <module name="honghu-collect-service" />
+        <module name="component-utils" />
+        <module name="commonservice-config" />
+        <module name="commonservice-system" />
+        <module name="honghu-auction-client" />
+        <module name="common-framework-dao" />
+        <module name="honghu-auction-api" />
+        <module name="honghu-collect-client" />
+        <module name="honghu-auction-service" />
+        <module name="commonservice-eureka" />
+        <module name="commonservice-mq-consumer3" />
+        <module name="commonservice-mq-consumer2" />
+        <module name="commonservice-mq-consumer1" />
+      </profile>
+    </annotationProcessing>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="common-framework-api" options="-parameters" />
+      <module name="common-framework-dao" options="-parameters" />
+      <module name="common-framework-service" options="-parameters" />
+    </option>
+  </component>
+</project>

@@ -1,0 +1,41 @@
+server: 
+port: 8888
+spring:
+  application:
+    name: commonservice-config-server
+  profiles:
+    active: discovery,native
+  cloud:
+    config:
+      server:
+        native.searchLocations: D:/honghu-conf/config-dev
+        #git:
+          #uri: http://xxx.xxx.xxx.xxx/backend/app-config.git
+          #username: honghu
+          #password: 123456
+          #searchPaths: config-dev
+security:
+  basic:
+    enabled: true
+  user:
+    name: honghu
+    password: 123456
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://honghu:123456@localhost:8761/eureka/
+      honghuZone: http://honghu:123456@localhost:8761/eureka/
+    registry-fetch-interval-seconds: 300
+    availability-zones:
+      honghu: honghuZone
+  instance:
+    prefer-ip-address: true
+    metadataMap:
+      version: 1.0
+      variant: A
+      user: ${security.user.name}
+      password: ${security.user.password}
+management:
+  security:
+    enabled: false
+
